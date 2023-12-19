@@ -5,11 +5,14 @@ import { RouterProvider } from 'react-router-dom';
 import { router } from './routes/routes.jsx';
 import Layout from './components/shared/Layout.jsx';
 import DrinkContextProviders from './context/DrinkContextProviders.jsx';
+import FavoritesContextProvider from './context/FavoritesContextProvider.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<DrinkContextProviders>
-		<Layout>
-			<RouterProvider router={router} />
-		</Layout>
+		<FavoritesContextProvider>
+			<Layout>
+				<RouterProvider router={router} />
+			</Layout>
+		</FavoritesContextProvider>
 	</DrinkContextProviders>,
 );

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import DrinkCard from '../../shared/cards/drinkCard';
 
 export default function Drinks({ drinks }) {

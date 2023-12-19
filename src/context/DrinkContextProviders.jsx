@@ -15,7 +15,6 @@ export default function DrinkContextProviders({ children }) {
 		};
 		fetData();
 	}, []);
-	console.log(drinks);
 	return (
 		<DrinksContext.Provider value={drinks}>{children}</DrinksContext.Provider>
 	);

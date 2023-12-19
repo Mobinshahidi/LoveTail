@@ -9,7 +9,7 @@ export default function Pagination({
 	}
 	return (
 		<>
-			<div className="flex justify-center">
+			<div className="flex justify-center flex-wrap">
 				{pages.map((page, index) => {
 					return (
 						<button

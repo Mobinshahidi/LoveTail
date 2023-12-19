@@ -1,3 +1,9 @@
+import Favorites from '../elements/favorite/favorites';
+
 export default function FavoritePage() {
-	return <>favorite page</>;
+	return (
+		<>
+			<Favorites />
+		</>
+	);
 }
