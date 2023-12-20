@@ -54,17 +54,28 @@ export default function DetailsId() {
 					}`}
 					onClick={clickedItems}
 				/>
-				<div role="tablist" className="tabs w-54 flex justify-center border rounded-full border-black">
+				<div
+					role="tablist"
+					className="tabs w-54 flex justify-center border rounded-full border-black"
+				>
 					<a
 						role="tab"
-						className={`tab ${active === 'description' ? 'tab-active border-2 rounded-full border-black' : null}`}
+						className={`tab ${
+							active === 'description'
+								? 'tab-active border-2 rounded-full border-black'
+								: null
+						}`}
 						onClick={() => setActive('description')}
 					>
 						description
 					</a>
 					<a
 						role="tab"
-						className={`tab ${active === 'recipe' ? 'tab-active border-2 rounded-full border-black' : null}`}
+						className={`tab ${
+							active === 'recipe'
+								? 'tab-active border-2 rounded-full border-black'
+								: null
+						}`}
 						onClick={() => setActive('recipe')}
 					>
 						recipe
